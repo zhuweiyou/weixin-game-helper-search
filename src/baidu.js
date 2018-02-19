@@ -12,5 +12,5 @@ module.exports = async ({question, options}) => {
     }
   })
   data = cheerio.load(data)('#content_left').text()
-  return options.map(option => ((data.match(new RegExp(escapeRegExp(option), 'img')) || {length: 0}).length))
+  return options.map(option => (data.match(new RegExp(escapeRegExp(option), 'img')) || {length: 0}).length)
 }

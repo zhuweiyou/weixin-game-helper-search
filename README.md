@@ -1,18 +1,16 @@
 # answer
 
-基于搜索引擎的简单答题模块，暂时只使用了百度搜索
+基于搜索引擎的问答匹配度查询，暂时只使用了百度搜索
 
-> 用于 [game-helper/weixin](https://github.com/game-helper/weixin) 答题类辅助没有正确答案时，搜索备用答案
+> 目前用于 [game-helper/weixin](https://github.com/game-helper/weixin) 答题类辅助没有正确答案时，提交匹配度最高的选项
 
-## 使用
-
-安装
+## 安装
 
 ```bash
 npm i game-helper/answer
 ```
 
-示例
+## 示例
 
 ```js
 const answer = require('answer')
@@ -26,6 +24,8 @@ const answer = require('answer')
       '曹雪芹',
       '罗贯中'
     ]
-  })) // [0, 0, 13，0] 数值越大的表示搜索结果越匹配，但不保证答案正确性
+  }))
+  // [0, 0, 13，0] 数值越大的表示搜索结果越匹配，理论上该选项为正确答案的几率更高，但不保证 100% 正确
 })()
 ```
+
