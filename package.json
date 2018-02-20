@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test"
+    "test": "mocha"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1"
   }
 }

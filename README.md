@@ -1,5 +1,8 @@
 # answer
 
+[![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/game-helper/answer.svg?branch=master)](https://travis-ci.org/game-helper/answer)
+
 基于搜索引擎的问答匹配度查询，暂时只使用了百度搜索
 
 > 目前用于 [game-helper/weixin](https://github.com/game-helper/weixin) 答题类辅助没有正确答案时，提交匹配度最高的选项
