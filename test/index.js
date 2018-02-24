@@ -1,14 +1,7 @@
 /* global describe, it */
 
 const assert = require('assert')
-const answer = require('../src')
-
-function maxIndex (array) {
-  return array.map((item, index) => ({item, index}))
-    .sort((a, b) => b.item - a.item)
-    .shift()
-    .index
-}
+const {answer, maxIndex} = require('../src')
 
 describe('测试', () => {
   it('中国的首都在北京', async () => {

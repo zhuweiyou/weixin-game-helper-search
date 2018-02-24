@@ -16,10 +16,10 @@ npm i game-helper/answer
 ## 示例
 
 ```js
-const answer = require('answer')
+const {answer, maxIndex} = require('answer')
 
 ;(async () => {
-  console.log(await answer({
+  const result = await answer({
     question: '《红楼梦》的作者是谁？',
     options: [
       '施耐庵',
@@ -27,8 +27,9 @@ const answer = require('answer')
       '曹雪芹',
       '罗贯中'
     ]
-  }))
-  // [0, 0, 13，0] 数值越大的表示搜索结果越匹配，理论上该选项为正确答案的几率更高，但不保证 100% 正确
+  })
+  console.log(result) // [0, 0, 13，0] 数值越大的表示搜索结果越匹配，理论上该选项为正确答案的几率更高，但不保证 100% 正确
+  maxIndex(result) // 2
 })()
 ```
 
