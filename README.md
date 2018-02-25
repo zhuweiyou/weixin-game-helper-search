@@ -26,7 +26,8 @@ const search = require('search')
       '吴承恩',
       '曹雪芹',
       '罗贯中'
-    ]
+    ],
+    // engine: 'baidu' 
   })
   console.log(result) // [0, 0, 13，0] 数值越大的表示搜索结果越匹配，理论上该选项为正确答案的几率更高，但不保证 100% 正确
   console.log(maxIndex) // 2

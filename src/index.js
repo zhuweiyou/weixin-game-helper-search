@@ -1,9 +1,11 @@
 const result = require('./result')
 const maxIndex = require('./max-index')
-const baidu = require('./engine/baidu')
+const engines = {
+  baidu: require('./engine/baidu')
+}
 
-module.exports = async ({question, options}) => {
-  const r = result(await baidu(question), options)
+module.exports = async ({question = '', options = [], engine = 'baidu'}) => {
+  const r = result(await engines[engine](question), options)
   return {
     result: r,
     maxIndex: maxIndex(r)
