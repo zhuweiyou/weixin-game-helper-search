@@ -4,7 +4,7 @@ const engines = {
   baidu: require('./engine/baidu')
 }
 
-module.exports = async ({question = '', options = [], engine = 'baidu'}) => {
+module.exports = async ({question = '', options = [], engine = 'baidu'} = {}) => {
   const r = result(await engines[engine](question), options)
   return {
     result: r,
