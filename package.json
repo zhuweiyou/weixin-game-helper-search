@@ -1,5 +1,5 @@
 {
-  "name": "answer",
+  "name": "search",
   "version": "0.2.0",
   "main": "src/index.js",
   "scripts": {
