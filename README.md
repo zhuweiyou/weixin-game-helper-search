@@ -10,7 +10,7 @@
 ## 安装
 
 ```bash
-npm i zhuweiyou/weixin-game-helper-search
+npm install github:zhuweiyou/weixin-game-helper-search
 ```
 
 ## 示例
