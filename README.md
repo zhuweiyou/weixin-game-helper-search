@@ -5,18 +5,18 @@
 
 基于搜索引擎的问答匹配度查询，目前使用了百度和搜狗搜索
 
-> 目前用于 [game-helper/weixin](https://github.com/game-helper/weixin) 答题类辅助，没有正确答案时提交推荐答案
+> 目前用于 [zhuweiyou/weixin-game-helper](https://github.com/zhuweiyou/weixin-game-helper) 答题类辅助，没有正确答案时提交推荐答案
 
 ## 安装
 
 ```bash
-npm i game-helper/search
+npm i zhuweiyou/weixin-game-helper-search
 ```
 
 ## 示例
 
 ```js
-const search = require('search')
+const search = require('weixin-game-helper-search')
 
 ;(async () => {
   const {result, index, maxIndex, minIndex} = await search({
